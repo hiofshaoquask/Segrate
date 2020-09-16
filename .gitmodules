@@ -1,0 +1,3 @@
+[submodule "Segrate/vendor/spdlog"]
+	path = Segrate/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
