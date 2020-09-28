@@ -1,6 +1,5 @@
 # Directories
-bin/
-bin-int/
+out/
 .vs/
 
 # Files
