@@ -21,4 +21,3 @@
 	#define SG_API
 	#pragma warning Unknown dynamic link 
 #endif
-
