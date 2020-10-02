@@ -14,3 +14,9 @@ add_executable(Sandbox "${SANDBOX_SRC}")
 
 include_directories("${CMAKE_SOURCE_DIR}/Engine/src")
 target_link_libraries(Sandbox Engine)
+
+add_custom_command(TARGET Sandbox POST_BUILD
+	COMMAND ${CMAKE_COMMAND} -E copy
+		"${CMAKE_BINARY_DIR}/Engine/debug/Engine.dll"
+		"${CMAKE_BINARY_DIR}/Sandbox/debug/Engine.dll"
+)
