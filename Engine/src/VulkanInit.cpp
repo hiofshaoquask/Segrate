@@ -15,7 +15,8 @@ namespace Segrate {
 		#endif
 
 		if (vulkan_library == nullptr) {
-
+			Logger::init();
+			Logger::getEngineLogger()->warn("Cannot load Vulkan library");
 		}
 	}
 
