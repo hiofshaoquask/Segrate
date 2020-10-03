@@ -3,6 +3,7 @@
 #include <stdexcept>
 
 #include "Logger.h"
+#include "vulkan/vulkan.hpp"
 
 namespace Segrate {
 
