@@ -18,3 +18,9 @@ namespace Segrate {
 		static inline std::shared_ptr<spdlog::logger>& getClientLogger() { return client_logger; }
 	};
 }
+
+#define SG_CLIENT_TRACE(...) Segrate::Logger::client_logger->trace(__VA_ARGS__);
+#define SG_CLIENT_TRACE(...) Segrate::Logger::client_logger->debug(__VA_ARGS__);
+#define SG_CLIENT_TRACE(...) Segrate::Logger::client_logger->warn(__VA_ARGS__);
+#define SG_CLIENT_TRACE(...) Segrate::Logger::client_logger->error(__VA_ARGS__);
+#define SG_CLIENT_TRACE(...) Segrate::Logger::client_logger->critical(__VA_ARGS__);

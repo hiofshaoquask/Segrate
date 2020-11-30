@@ -6,7 +6,7 @@ namespace Segrate {
 
 	void Logger::init() {
 		spdlog::set_level(spdlog::level::trace);
-		spdlog::set_pattern("[%T] %n: %v");
+		spdlog::set_pattern("[%H:%M:%S %z] [%n] [%^---%L---%$] [thread %t] %v");
 
 		engine_logger = spdlog::stdout_color_mt("Segrate");
 		client_logger = spdlog::stdout_color_mt("Sandbox");
